@@ -8,127 +8,138 @@
     font-size: 15px;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
 h2,
 h3,
 h4 {
-    color: hsl(234, 12%, 34%);
+    color: #4D4F62;
 }
 
 h1 {
-    font-size: 2.6rem;
+    font-size: 24px;
+    letter-spacing: 0.17px;
     font-weight: 600;
     color: hsl(234, 12%, 34%);
 }
 
 h2 {
-    padding-bottom: 20px;
+
+    margin-top: 27px;
     font-weight: 600;
-    font-size: 1.6rem;
+    font-size: 20px;
 }
 
 h3 {
-    font-size: 2.5rem;
-    letter-spacing: 1px;
+    font-size: 24px;
+    letter-spacing: 0.17px;
 }
 
 main {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 0% 0%;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "Header Header Header"
-        "Card-1 Card-2 Card-4"
-        "Card-1 Card-3 Card-4";
-    width: 345px;
+    margin: 0 32px 78px 32px;
+
 
 }
 
-.Header {
+main p {
+    line-height: 23px;
+    letter-spacing: 0.09px;
+}
+
+main img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 28px;
+    margin-bottom: 23px;
+    width: 57px;
+}
+
+header {
     justify-self: center;
     align-self: center;
     text-align: center;
-    grid-area: Header;
-    width: 45%;
+    margin-top: 85px;
+    margin-bottom: 76px;
+    width: 311px;
 
 }
 
-.Header p {
+header p {
     font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 0.1px;
+    line-height: 25px;
+    font-weight: 200;
+
 }
 
-.Card-1,
-.Card-2,
-.Card-3,
-.Card-4 {
-    width: 350px;
-    height: 250px;
-    padding: 30px;
-    margin: 15px;
-    border-top: 5px solid;
-    border-radius: 6px;
-    box-shadow: 5px 15px 10px 0 hsl(0, 0%, 98%);
-}
-
-.Card-1 {
+.supervisor,
+.team-builder,
+.karma,
+.calculator {
     position: relative;
-    justify-self: center;
-    align-self: center;
-    grid-area: Card-1;
+    padding: 0px 30px 0 30px;
+    height: 220px;
+    margin-bottom: 25px;
+    border-top: 3.55px solid;
+    border-radius: 8px;
+    box-shadow: 0 15px 30px -11px rgba(131, 166, 210, 0.5);
+}
+
+.supervisor {
     border-color: hsl(180, 62%, 55%);
 }
 
-.Card-1 img {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    padding: 30px;
-}
 
-.Card-2 {
-    position: relative;
-    justify-self: center;
-    align-self: center;
-    grid-area: Card-2;
+
+.team-builder {
     border-color: hsl(0, 78%, 62%);
-    margin-top: 60px;
 
 }
 
-.Card-2 img {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    padding: 30px;
-}
-
-.Card-4 {
-    position: relative;
-    justify-self: center;
-    align-self: center;
-    grid-area: Card-4;
+.karma {
     border-color: hsl(212, 86%, 64%);
 }
 
-.Card-4 img {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    padding: 30px;
-}
-
-.Card-3 {
-    position: relative;
-    justify-self: center;
-    align-self: center;
-    grid-area: Card-3;
+.calculator {
     border-color: hsl(34, 97%, 64%);
 }
 
-.Card-3 img {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    padding: 30px;
+
+
+/* @media screen and (max-width:1100px) {
+
+    main{
+        display: flex;
+        flex-direction: column;
+
+
+    }
+.Card-1, .Card-2, .Card-3, .Card-4{
+    margin-bottom:30px;
+    margin-top: 0;
 }
+header{
+    width: auto;
+    margin-bottom: 70px;
+    margin-top: 70px;
+
+}
+h1{
+font-size: 2rem;
+}
+
+h3{
+font-size: 1.8rem;
+}
+header p{
+    font-weight: 200;
+}
+} */
